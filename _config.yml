@@ -1,0 +1,53 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Trilby Multimedia
+email: email@example.com
+description: > # this means to ignore newlines until "baseurl:"
+  Trilby Multimedia are the makers of TrilbyTV, the digital signage platform made for education, and have been working in education for over 20 years.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://example.com" # the base hostname & protocol for your site
+twitter: twitter
+github:  jekyll
+timezone: Europe/London
+
+# Build settings
+markdown: kramdown
+
+gems:
+  - jemoji
+  - jekyll-paginate
+  - jekyll-sitemap
+  # - sprockets-helpers
+  - jekyll-assets
+  - kramdown
+  - bourbon
+  - neat
+  - mini_magick
+  
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - Rakefile
+  - default/
+  - config/
+  
+assets:
+  autowrite: true
+  cdn: https://cdn.example.com
+  skip_baseurl_with_cdn: false
+  skip_prefix_with_cdn: false
+  prefix: "/assets"
+
+  sources:
+    - _assets/css
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts

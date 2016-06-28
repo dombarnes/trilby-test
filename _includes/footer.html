@@ -1,0 +1,36 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>&copy; 2016. Trilby Multimedia Ltd</li>
+          <li>47-49 Loveday Street, Birmingham, B4 6NR</li>
+          <li>Registered in England and Wales 4572637</li>
+          <li>VAT Registration 614460953</li>
+          <li><a href="/privacy-and-cookies">Privacy and Cookie Notice</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+        {% img 'EC_logo.png' height:45 width:100 %}
+        {% img 'EU_logo.png' height:45 width:150 %}
+      </div>
+    </div>
+  </div>
+</footer>
